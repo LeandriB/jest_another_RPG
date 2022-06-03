@@ -1,0 +1,22 @@
+{
+  "name": "jest_another_rpg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeandriB/jest_another_RPG.git"
+  },
+  "author": "Leandri Beavis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeandriB/jest_another_RPG/issues"
+  },
+  "homepage": "https://github.com/LeandriB/jest_another_RPG#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
