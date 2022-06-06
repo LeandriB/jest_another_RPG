@@ -3,6 +3,8 @@ const Potion = require('../lib/Potion');
 
 jest.mock('../lib/Potion');
 
+// Checks Player object
+
 test('creates a player object', () => {
     const player = new Player('Dave');
 
@@ -15,5 +17,27 @@ test('creates a player object', () => {
     );
 });
 
+// Checks player stats
 
-console.log(new Potion());
+test("gets player's stats as an object", () => {
+    const player = new Player('Dave');
+
+    expect(player.getStats()).toHaveProperty('potions');
+    expect(player.getStats()).toHaveProperty('health');
+    expect(player.getStats()).toHaveProperty('strength');
+    expect(player.getStats()).toHaveProperty('agility');
+});
+
+// Checks players inventory
+
+test('gets inventory from player or returns false', () => {
+    const player = new Player('Dave');
+
+    expect(player.getInventory()).toEqual(expect.any(Array));
+
+    player.inventory = [];
+
+    expect(player.getInventory()).toEqual(false);
+});
+
+
