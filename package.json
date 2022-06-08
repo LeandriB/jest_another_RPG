@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/LeandriB/jest_another_RPG#readme",
   "devDependencies": {
+    "inquirer": "^8.2.4",
     "jest": "^28.1.0"
   }
 }
